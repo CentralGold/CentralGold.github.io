@@ -1,27 +1,71 @@
-<!doctype html>
-<html lang="my">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CentralGold Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CentralGold</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+    }
+    header img {
+      max-height: 60px;
+    }
+    nav a {
+      margin: 0 10px;
+      color: gold;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      padding: 40px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #00aced;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>👋 မင်္ဂလာပါ — CentralGold Website</h1>
-    <p>ဤစာမျက်နှာကို GitHub Pages ပေါ်တွင် အခမဲ့ Live တင်ထားနိုင်ပါတယ်။</p>
+    <!-- Logo -->
+    <img src="logo.png" alt="CentralGold Logo">
+    <h1>Welcome to CentralGold</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="https://facebook.com/YourPage" target="_blank">Facebook</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>ဒီဟာက စတင်အသုံးပြုနိုင်ဖို့ အလွယ်တကူပြင်ဆင်ထားတဲ့ HTML + CSS template ပဲဖြစ်ပါတယ်။
-      မင်းလိုအပ်သလို <code>index.html</code> ကို ပြင်ဆင်ပြီး အကြိုက်ဆုံးစာတမ်း ထည့်နိုင်ပါတယ်။</p>
-    </section>
-  </main>
+  <div class="content" id="home">
+    <h2>Trusted Gold Information & Services</h2>
+    <p>CentralGold သည် သင့်ရဲ့ ရွှေစျေးကွက် အချက်အလက်များကို အချိန်နှင့်တပြေးညီ တိုက်ရိုက်ပေးစွမ်းသည့် ဝန်ဆောင်မှု ဖြစ်ပါသည်။</p>
+  </div>
 
-  <footer>
-    <p>© 2025 CentralGold</p>
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>📞 Phone: +95 9 123 456 789</p>
+    <p>📧 Email: info@centralgold.com</p>
+    <p>🌐 <a href="https://facebook.com/YourPage" target="_blank">Visit our Facebook Page</a></p>
+    <p>&copy; 2025 CentralGold. All rights reserved.</p>
   </footer>
 </body>
 </html>
