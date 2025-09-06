@@ -5,19 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Central Gold & Jewelry</title>
   <style>
-    /* Body with responsive background logo */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
-      background: #f9f9f9 url('https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/logo.png') no-repeat center center;
-      background-size: 20%; /* screen size အလိုက် responsive */
-      background-attachment: fixed; /* scroll တုန်လှုပ်မှု မပါ */
+      color: white;
+      background-color: #046307; /* ✅ Emerald Green */
       position: relative;
+      min-height: 100vh;
     }
 
-    /* Overlay to reduce background logo opacity */
+    /* ✅ Background Logo Full Repeat */
     body::before {
       content: "";
       position: fixed;
@@ -25,19 +24,19 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #f9f9f9;
-      opacity: 0.7; /* adjust opacity */
+      background: url('https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/logo.png') repeat;
+      background-size: 200px; /* ✅ Logo size (နည်းနည်းကြီးချင်ရင် 300px လိုက်စမ်းပါ) */
+      opacity: 0.08; /* ✅ faint watermark */
       z-index: 0;
     }
 
     header, .content, footer {
       position: relative;
-      z-index: 1; /* text အပေါ်မှာ overlay */
+      z-index: 1; /* ✅ content အပေါ်ပိုထွက်အောင် */
     }
 
     header {
-      background: rgba(34, 34, 34, 0.9);
-      color: white;
+      background: rgba(34, 34, 34, 0.92);
       padding: 20px;
     }
 
@@ -57,37 +56,21 @@
     }
 
     footer {
-      background: rgba(34, 34, 34, 0.9);
-      color: white;
+      background: goldenrod;
+      color: #222;
       padding: 20px;
       margin-top: 40px;
     }
 
     footer a {
-      color: #00aced;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
-    }
-
-    /* Responsive adjustments for small screens */
-    @media screen and (max-width: 600px) {
-      body {
-        background-size: 40%; /* smaller screens */
-      }
-
-      header img {
-        max-height: 40px;
-      }
-
-      .content {
-        padding: 20px 10px;
-      }
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Logo -->
     <img src="https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/logo.png" alt="CentralGold Logo">
     <h1>Welcome to CentralGold</h1>
     <nav>
@@ -99,7 +82,10 @@
 
   <div class="content" id="home">
     <h2>Trusted Gold Information & Services</h2>
-    <p>CentralGold သည် သင့်ရဲ့ ရွှေစျေးကွက် အချက်အလက်များကို အချိန်နှင့်တပြေးညီ တိုက်ရိုက်ပေးစွမ်းသည့် ဝန်ဆောင်မှု ဖြစ်ပါသည်။</p>
+    <p>
+      CentralGold သည် သင့်ရဲ့ ရွှေစျေးကွက် အချက်အလက်များကို 
+      အချိန်နှင့်တပြေးညီ တိုက်ရိုက်ပေးစွမ်းသည့် ဝန်ဆောင်မှု ဖြစ်ပါသည်။
+    </p>
   </div>
 
   <footer id="contact">
